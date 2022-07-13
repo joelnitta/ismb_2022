@@ -35,14 +35,14 @@ library(fontawesome)
 ::: {.column width="50%"}
 
 :::: {.medium}
-**Joel Nitta<sup>1</sup>**, Eric Schuettpelz<sup>2</sup>, Santiago Ramírez-Barahona<sup>3</sup>,  
+**Joel Nitta<sup>1</sup>**, Eric Schuettpelz<sup>2</sup>, Santiago Ram&iacute;rez-Barahona<sup>3</sup>,  
 Wataru Iwasaki<sup>1</sup>
 ::::
 
 :::: {.small}
-1: The University of Tokyo, 2: Smithsonian Institution, 3: Universidad Nacional Autónoma de México  
-ISMB EvolCompGen COSI 2022-07-13  
-[https://joelnitta.github.io/ismb_2022](https://joelnitta.github.io/ismb_2022)
+1: The University of Tokyo, 2: Smithsonian Institution, 3: Universidad Nacional Aut&oacute;noma de M&eacute;xico  
+Botany 2022  
+[https://joelnitta.github.io/botany_2022_ftol](https://joelnitta.github.io/botany_2022_ftol)
 ::::
 
 :::
@@ -58,7 +58,7 @@ ISMB EvolCompGen COSI 2022-07-13
 
 ::: {.column width="50%" .medium}
 ![](images/darwin_tree.png){height="400"}  
-@Darwin1859
+Darwin (1837)
 :::
 
 
@@ -179,7 +179,7 @@ Much more tractable than seed plants (angiosperms):
 
 - Download portion ("plants" division) of GenBank from FTP site (v249, cutoff date 2022-04-15, ca. 170 gb)
 
-- Put only fern and outgroup sequences into local DB (mariaDB, ca. 400 mb)
+- Put only fern and outgroup sequences into local DB (monetDB, ca. 400 mb)
 
 - Post DB in [figshare](https://figshare.com/articles/dataset/Fern_Tree_of_Life_FTOL_input_data/19474316) so others can use
 
@@ -191,9 +191,13 @@ Much more tractable than seed plants (angiosperms):
 
 There is **no standard** for how to annotate GenBank accessions
 
-- Curate set of reference sequences (one sequence per genus) based on well-annotated accessions
+- Curate set of reference sequences (one sequence per genus)
 
-- Use these as a BLAST DB to extract matching regions from each fern accession with superCRUNCH [@Portik2020]
+- Use these as a BLAST DB to extract matching regions with superCRUNCH [@Portik2020]
+
+::: {.center}
+![](images/supercrunch.png){height="200"}
+:::
 
 ## `r fa("pagelines")` Implement a custom fern taxonomy {.smaller}
 
@@ -322,7 +326,9 @@ ggsave(
 - Suggests ferns **did not diversify "in the shadow" of angiosperms**
 
 ---
-## {background-image="images/stem_ages.png" background-size="contain"}
+## Older stem<br>ages for most<br>families
+
+![](images/stem_ages.png){.absolute top=0 left=400 height="700"}
 
 ## Web portal
 
@@ -395,5 +401,9 @@ Consulted with a taxonomic expert on family Thelypteridaceae (S. Fawcett) betwee
 - S. Fawcett
 
 - M. Hassler
+
+## hidden refs {visibility="hidden"}
+
+[@Testo2016a]
 
 ## References {.scrollable}
